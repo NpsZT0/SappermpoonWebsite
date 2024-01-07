@@ -1,11 +1,11 @@
+import axios from 'axios'
 import { Key } from 'react'
 import Link from 'next/link'
 
 import getMainProducts from '@/app/functions/getMainProducts'
 import getImage from '../../functions/getImage'
 
-
-async function SlateKnockdown({ productType }: { productType: string }) {
+async function Trough({productType}: {productType: string}) {
 
     const troughs = await getMainProducts(productType)
 
@@ -39,4 +39,4 @@ async function SlateKnockdown({ productType }: { productType: string }) {
     );
 }
 
-export default SlateKnockdown;
+export default Trough;
