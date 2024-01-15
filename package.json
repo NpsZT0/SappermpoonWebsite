@@ -12,6 +12,7 @@
 		"@react-three/cannon": "^6.6.0",
 		"@react-three/drei": "^9.92.7",
 		"@react-three/fiber": "^8.15.12",
+		"@vercel/speed-insights": "^1.0.3",
 		"axios": "^1.6.5",
 		"framer-motion": "^10.16.16",
 		"next": "14.0.4",
