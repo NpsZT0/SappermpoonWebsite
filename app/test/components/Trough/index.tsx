@@ -5,7 +5,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF, Html, useProgress, Environment } from "@react-three/drei";
 
 const Computers = ({ isMobile }: { isMobile: boolean }) => {
-  const model = useGLTF("./asset/trough.glb");
+  const model = useGLTF("./asset/trough-v2.glb");
 
   return (
     <group dispose={null}>
@@ -22,8 +22,8 @@ const Computers = ({ isMobile }: { isMobile: boolean }) => {
         {/* <pointLight intensity={1} /> */}
         <primitive
           object={model.scene}
-          scale={isMobile ? 0.7 : 2}
-          position={isMobile ? [0, 1, 0] : [0, 0, 0]}
+          scale={isMobile ? 0.8 : 2}
+          position={[0, 0, 0]}
           rotation={[0.1, -0.4, 0]}
         />
       </mesh>
