@@ -5,7 +5,7 @@ import SwapThemeMode from "./swap-theme-mode";
 
 function Header() {
     return (
-        <div className="navbar bg-base-100 text-base-content">
+        <div className="navbar bg-base-100 text-base-content sticky top-0 z-[1]">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
