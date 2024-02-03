@@ -11,7 +11,7 @@ function Header() {
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </div>
-                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-fit">
+                    <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-200 rounded-box w-fit">
                         {/* <li><Link href={'/'}>หน้าแรก</Link></li> */}
                         <li>
                             <div>สินค้าและบริการ</div>
@@ -55,7 +55,7 @@ function Header() {
                             <summary>
                                 สินค้าและบริการ
                             </summary>
-                            <ul className="p-2 bg-base-100 space-y-1 rounded-t-none z-[1]">
+                            <ul className="p-2 bg-base-200 space-y-1 rounded-t-none z-[1]">
                                 <li><Link href="/product-service/trough">รางระบายน้ำ</Link></li>
                                 {/* <li><Link href="/product-service/slate-floor">แผ่นสแลทปูพื้นคอกสำเร็จรูป</Link></li> */}
                                 {/* <li><Link href="/product-service/slate-breeder">สแลทพ่อพันธุ์</Link></li> */}
