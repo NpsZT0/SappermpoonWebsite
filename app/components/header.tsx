@@ -5,7 +5,7 @@ import SwapThemeMode from "./swap-theme-mode";
 
 function Header() {
     return (
-        <div className="navbar bg-base-100 text-base-content sticky top-0 z-[1]">
+        <div className="navbar bg-base-200 text-base-content sticky top-0 z-[1]">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -14,18 +14,20 @@ function Header() {
                     <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-fit">
                         {/* <li><Link href={'/'}>หน้าแรก</Link></li> */}
                         <li>
-                            <Link href={''}>สินค้าและบริการ</Link>
+                            <div>สินค้าและบริการ</div>
                             <ul className="p-2">
-                                <li><Link href="/product-service/trough">รางระบายน้ำพร้อมฝาปิด คอนกรีตสำเร็จรูป</Link></li>
-                                <li><Link href="/product-service/slate-floor">แผ่นสแลทปูพื้นคอกสำเร็จรูป</Link></li>
-                                <li><Link href="/product-service/slate-breeder">สแลทพ่อพันธุ์</Link></li>
-                                <li><Link href="/product-service/slate-calve">สแลทคอกคลอด</Link></li>
-                                <li><Link href="/product-service/wall-calve">ผนังคอกคลอด</Link></li>
-                                <li><Link href="/product-service/wall-pig">ผนังคอกหมูขุน</Link></li>
-                                <li><Link href="/product-service/slate-knockdown">ผนังสำเร็จรูป ระบบ Knockdown สำหรับกั้นคอก</Link></li>
-                                <li><Link href="/product-service/pillar-beams-pier">ระบบ เสา คาน ตอม่อ สำเร็จรูป</Link></li>
-                                <li><Link href="/product-service/stake">เสาเข็ม แผ่นพื้น สิ้นค้าจิปาถะ</Link></li>
-                                <li><Link href="/product-service/fence">รั้วและกำแพงกันดิน คอนกรีตสำเร็จรูป</Link></li>
+                                <li><Link href="/product-service/trough">รางระบายน้ำ</Link></li>
+                                {/* <li><Link href="/product-service/slate-floor">แผ่นสแลทปูพื้นคอกสำเร็จรูป</Link></li> */}
+                                {/* <li><Link href="/product-service/slate-breeder">สแลทพ่อพันธุ์</Link></li> */}
+                                {/* <li><Link href="/product-service/slate-calve">สแลทคอกคลอด</Link></li> */}
+                                {/* <li><Link href="/product-service/wall-calve">ผนังคอกคลอด</Link></li> */}
+                                {/* <li><Link href="/product-service/wall-pig">ผนังคอกหมูขุน</Link></li> */}
+                                {/* <li><Link href="/product-service/slate-knockdown">ผนังสำเร็จรูป ระบบ Knockdown สำหรับกั้นคอก</Link></li> */}
+                                {/* <li><Link href="/product-service/pillar-beams-pier">ระบบ เสา คาน ตอม่อ สำเร็จรูป</Link></li> */}
+                                <li><Link href="/product-service/trough-cover">ฝารางระบายน้ำ</Link></li>
+                                <li><Link href="/product-service/steel-grating-cover">ฝาตะแกรงเหล็ก</Link></li>
+                                <li><Link href="/product-service/stake">เสาเข็ม แผ่นพื้น เสาไอ</Link></li>
+                                {/* <li><Link href="/product-service/fence">รั้วและกำแพงกันดิน คอนกรีตสำเร็จรูป</Link></li> */}
                             </ul>
                         </li>
                         <li><Link href="#">ออกแบบและก่อสร้าง</Link></li>
@@ -43,7 +45,7 @@ function Header() {
                         className="ml-4 object-cover "
                     />
                 </div> */}
-                <Link className="btn btn-sm glass ml-1 btn-ghost text-sm md:text-base" href="/">ทรัพย์เพิ่มพูน</Link>
+                <Link className={`btn btn-sm md:btn-md text-sm md:text-base glass ml-1`} href="/">ทรัพย์เพิ่มพูน</Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 space-x-1">
@@ -54,16 +56,18 @@ function Header() {
                                 สินค้าและบริการ
                             </summary>
                             <ul className="p-2 bg-base-100 space-y-1 rounded-t-none z-[1]">
-                                <li><Link href="/product-service/trough">รางระบายน้ำพร้อมฝาปิด คอนกรีตสำเร็จรูป</Link></li>
-                                <li><Link href="/product-service/slate-floor">แผ่นสแลทปูพื้นคอกสำเร็จรูป</Link></li>
-                                <li><Link href="/product-service/slate-breeder">สแลทพ่อพันธุ์</Link></li>
-                                <li><Link href="/product-service/slate-calve">สแลทคอกคลอด</Link></li>
-                                <li><Link href="/product-service/wall-calve">ผนังคอกคลอด</Link></li>
-                                <li><Link href="/product-service/wall-pig">ผนังคอกหมูขุน</Link></li>
-                                <li><Link href="/product-service/slate-knockdown">ผนังสำเร็จรูป ระบบ Knockdown สำหรับกั้นคอก</Link></li>
-                                <li><Link href="/product-service/pillar-beams-pier">ระบบ เสา คาน ตอม่อ สำเร็จรูป</Link></li>
-                                <li><Link href="/product-service/stake">เสาเข็ม แผ่นพื้น สิ้นค้าจิปาถะ</Link></li>
-                                <li><Link href="/product-service/fence">รั้วและกำแพงกันดิน คอนกรีตสำเร็จรูป</Link></li>
+                                <li><Link href="/product-service/trough">รางระบายน้ำ</Link></li>
+                                {/* <li><Link href="/product-service/slate-floor">แผ่นสแลทปูพื้นคอกสำเร็จรูป</Link></li> */}
+                                {/* <li><Link href="/product-service/slate-breeder">สแลทพ่อพันธุ์</Link></li> */}
+                                {/* <li><Link href="/product-service/slate-calve">สแลทคอกคลอด</Link></li> */}
+                                {/* <li><Link href="/product-service/wall-calve">ผนังคอกคลอด</Link></li> */}
+                                {/* <li><Link href="/product-service/wall-pig">ผนังคอกหมูขุน</Link></li> */}
+                                {/* <li><Link href="/product-service/slate-knockdown">ผนังสำเร็จรูป ระบบ Knockdown สำหรับกั้นคอก</Link></li> */}
+                                {/* <li><Link href="/product-service/pillar-beams-pier">ระบบ เสา คาน ตอม่อ สำเร็จรูป</Link></li> */}
+                                <li><Link href="/product-service/trough-cover">ฝารางระบายน้ำ</Link></li>
+                                <li><Link href="/product-service/steel-grating-cover">ฝาตะแกรงเหล็ก</Link></li>
+                                <li><Link href="/product-service/stake">เสาเข็ม แผ่นพื้น เสาไอ</Link></li>
+                                {/* <li><Link href="/product-service/fence">รั้วและกำแพงกันดิน คอนกรีตสำเร็จรูป</Link></li> */}
                             </ul>
                         </details>
                     </li>
@@ -73,7 +77,7 @@ function Header() {
                     <li><Link href="#">ติดต่อ</Link></li>
                 </ul>
             </div>
-            <div className="navbar-end">
+            <div className="navbar-end mr-4">
                 <SwapThemeMode />
                 {/* <Link className="btn">ติดต่อ</Link> */}
             </div>

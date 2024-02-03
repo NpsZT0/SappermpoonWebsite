@@ -9,8 +9,8 @@ const Trough3d = dynamic(() => import("./components/Trough"), {
 
 function Trough3dPage() {
     return (
-        <div className="flex items-center justify-center h-svh lg:h-screen py-[5%] bg-base-200">
-            <div className="flex items-center justify-center w-[80%] h-full border-2 border-slate-500 rounded-md bg-slate-900">
+        <div className="flex items-center justify-center h-svh lg:h-screen py-[5%] bg-base-100">
+            <div className="flex items-center justify-center w-[80%] h-full border-2 border-slate-500 rounded-md bg-base-300">
                 <Trough3d />
             </div>
             <div className="hidden lg:block absolute top-50 right-[12%]">
