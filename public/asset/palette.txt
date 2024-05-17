@@ -1,0 +1,35 @@
+/* Coolors Exported Palette - https://coolors.co/bfbdc1-66646e-302c36-d3ae3f-d59834 */
+
+- Tailwind
+
+{ 'french_gray': { DEFAULT: '#bfbdc1', 100: '#262527', 200: '#4d4a4f', 300: '#736f76', 400: '#99969c', 500: '#bfbdc1', 600: '#cccace', 700: '#d9d8da', 800: '#e6e5e6', 900: '#f2f2f3' }, 'dim_gray': { DEFAULT: '#66646E', 100: '#141416', 200: '#29282c', 300: '#3d3c42', 400: '#514f58', 500: '#66646e', 600: '#83818d', 700: '#a2a0a9', 800: '#c1c0c6', 900: '#e0dfe2' }, 'raisin_black': { DEFAULT: '#302C36', 100: '#09090b', 200: '#131115', 300: '#1c1a20', 400: '#26232b', 500: '#302c36', 600: '#585163', 700: '#81778f', 800: '#aba4b5', 900: '#d5d2da' }, 'gold_(metallic)': { DEFAULT: '#D3AE3F', 100: '#2d240a', 200: '#5a4814', 300: '#876d1f', 400: '#b49129', 500: '#d3ae3f', 600: '#dcbf66', 700: '#e5cf8c', 800: '#eedfb3', 900: '#f6efd9' }, 'harvest_gold': { DEFAULT: '#D59834', 100: '#2c1f09', 200: '#583d12', 300: '#845c1b', 400: '#b07a24', 500: '#d59834', 600: '#deac5c', 700: '#e6c185', 800: '#eed6ae', 900: '#f7ead6' } }
+
+- CSV
+
+bfbdc1,66646E,302C36,D3AE3F,D59834
+
+- With #
+
+#bfbdc1, #66646E, #302C36, #D3AE3F, #D59834
+
+- Array
+
+["bfbdc1","66646E","302C36","D3AE3F","D59834"]
+
+- Object
+
+{"French gray":"bfbdc1","Dim gray":"66646E","Raisin black":"302C36","Gold (metallic)":"D3AE3F","Harvest gold":"D59834"}
+
+- Extended Array
+
+[{"name":"French gray","hex":"bfbdc1","rgb":[191,189,193],"cmyk":[1,2,0,24],"hsb":[270,2,76],"hsl":[270,3,75],"lab":[77,1,-2]},{"name":"Dim gray","hex":"66646E","rgb":[102,100,110],"cmyk":[7,9,0,57],"hsb":[252,9,43],"hsl":[252,5,41],"lab":[43,3,-5]},{"name":"Raisin black","hex":"302C36","rgb":[48,44,54],"cmyk":[11,19,0,79],"hsb":[264,19,21],"hsl":[264,10,19],"lab":[19,4,-6]},{"name":"Gold (metallic)","hex":"D3AE3F","rgb":[211,174,63],"cmyk":[0,18,70,17],"hsb":[45,70,83],"hsl":[45,63,54],"lab":[73,2,59]},{"name":"Harvest gold","hex":"D59834","rgb":[213,152,52],"cmyk":[0,29,76,16],"hsb":[37,76,84],"hsl":[37,66,52],"lab":[67,14,59]}]
+
+- XML
+
+<palette>
+  <color name="French gray" hex="bfbdc1" r="191" g="189" b="193" />
+  <color name="Dim gray" hex="66646E" r="102" g="100" b="110" />
+  <color name="Raisin black" hex="302C36" r="48" g="44" b="54" />
+  <color name="Gold (metallic)" hex="D3AE3F" r="211" g="174" b="63" />
+  <color name="Harvest gold" hex="D59834" r="213" g="152" b="52" />
+</palette>

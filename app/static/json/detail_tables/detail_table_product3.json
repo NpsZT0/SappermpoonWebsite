@@ -1,0 +1,538 @@
+[
+    {
+        "uditch_1": {
+            "size": "35x150x5",
+            "thickness": "1.5",
+            "details": "3x4",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "41x129x6",
+            "thickness": "1",
+            "details": "3x6",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x65x6",
+            "thickness": "1.5",
+            "details": "2x5",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x70x5",
+            "thickness": "1.5",
+            "details": "3x5",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x90x6",
+            "thickness": "1.5",
+            "details": "3x6",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x93x6",
+            "thickness": "1.5",
+            "details": "3x5",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x100x5",
+            "thickness": "1",
+            "details": "3x5",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x100x5",
+            "thickness": "1.5",
+            "details": "4x7",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x100x5",
+            "thickness": "1.5",
+            "details": "5x5",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x100x6",
+            "thickness": "1",
+            "details": "3x7",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x100x6",
+            "thickness": "1.5",
+            "details": "3x5",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x100x6",
+            "thickness": "1.5",
+            "details": "4x7",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x100x7",
+            "thickness": "1.5",
+            "details": "2x5",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x109.5x5",
+            "thickness": "1.5",
+            "details": "5x5",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x105x6",
+            "thickness": "1",
+            "details": "3x7",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x110x5",
+            "thickness": "1.5",
+            "details": "5x5",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x110x6",
+            "thickness": "1",
+            "details": "3x7",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x120x5",
+            "thickness": "1.5",
+            "details": "4x7",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x120x5",
+            "thickness": "1.5",
+            "details": "6x5",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x120x6",
+            "thickness": "1.5",
+            "details": "4x6",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x120x7",
+            "thickness": "2",
+            "details": "3x5",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x125x6",
+            "thickness": "1",
+            "details": "3x8",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x125x6",
+            "thickness": "1.5",
+            "details": "4x6",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x128x6",
+            "thickness": "1.5",
+            "details": "4x6",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x140x5",
+            "thickness": "1.5",
+            "details": "4x5",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x150x5",
+            "thickness": "1.5",
+            "details": "3x5",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x150x6",
+            "thickness": "1.5",
+            "details": "5x5",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x150x7",
+            "thickness": "1.5",
+            "details": "3x6",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x150x7",
+            "thickness": "2",
+            "details": "3x5",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x164x5",
+            "thickness": "1",
+            "details": "5x5",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x164x5",
+            "thickness": "1.5",
+            "details": "5x5",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x164x7.5",
+            "thickness": "1.5",
+            "details": "3x5",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "50x165x5",
+            "thickness": "1",
+            "details": "5x5",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "55x105x5",
+            "thickness": "1",
+            "details": "3x8",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "60x90x6",
+            "thickness": "0.8",
+            "details": "2x9",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "60x90x6",
+            "thickness": "1",
+            "details": "2x9",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "60x96x5",
+            "thickness": "1",
+            "details": "3x9",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "60x100x5",
+            "thickness": "1.5",
+            "details": "5x6",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "60x100x6",
+            "thickness": "1",
+            "details": "3x9",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "60x100x6",
+            "thickness": "1",
+            "details": "3x11",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "60x105x5",
+            "thickness": "1",
+            "details": "3x9",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "60x115x5",
+            "thickness": "1.5",
+            "details": "5x6",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "60x120x6",
+            "thickness": "1.5",
+            "details": "3x6",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "60x120x6",
+            "thickness": "1.5",
+            "details": "3x7",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "60x125x6",
+            "thickness": "1.5",
+            "details": "4x7",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "60x180x6",
+            "thickness": "1",
+            "details": "4x9",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "60x200x8",
+            "thickness": "1",
+            "details": "5x6",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "60x220x8",
+            "thickness": "0.8",
+            "details": "5x6",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "60x220x8",
+            "thickness": "1",
+            "details": "5x6",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "60.5x220x7.5",
+            "thickness": "1",
+            "details": "5x6",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "61x127x5",
+            "thickness": "1.5",
+            "details": "6x6",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "64.5x100x5.5",
+            "thickness": "1.5",
+            "details": "3x6",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "65x65x5",
+            "thickness": "1",
+            "details": "2x10",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "65x65x6",
+            "thickness": "1.5",
+            "details": "2x7",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "65x100x5",
+            "thickness": "1",
+            "details": "3x10",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "65x100x5",
+            "thickness": "1.5",
+            "details": "5x6",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "65x100x6",
+            "thickness": "1",
+            "details": "3x11",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "65x100x6",
+            "thickness": "1.5",
+            "details": "3x6",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "65x107x6",
+            "thickness": "1",
+            "details": "3x9",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "65x115x5",
+            "thickness": "1.5",
+            "details": "5x6",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "65x120x6",
+            "thickness": "1.5",
+            "details": "3x6",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "65x125x5",
+            "thickness": "1",
+            "details": "4x10",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "65x125x5",
+            "thickness": "1.5",
+            "details": "6x6",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "65x125x6",
+            "thickness": "1",
+            "details": "3x9",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "65x125x6",
+            "thickness": "1.5",
+            "details": "4x7",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "69x103x6",
+            "thickness": "1",
+            "details": "3x13",
+            "unit": "cm"
+        }
+    },
+    {
+        "uditch_1": {
+            "size": "80×220×8",
+            "thickness": "0.8",
+            "details": "5×8",
+            "unit": "ซม"
+        }
+    }
+]

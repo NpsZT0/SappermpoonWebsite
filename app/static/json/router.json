@@ -1,0 +1,26 @@
+[
+    {
+        "name": "หน้าแรก",
+        "href": "/"
+    },
+    {
+        "name": "สินค้าและบริการ",
+        "href": "/pages/product_service"
+    },
+    {
+        "name": "ออกแบบและก่อสร้าง",
+        "href": "/pages/design_build"
+    },
+    {
+        "name": "ผลการดำเนินงาน",
+        "href": "/pages/works"
+    },
+    {
+        "name": "เกี่ยวกับเรา",
+        "href": "/pages/about"
+    },
+    {
+        "name": "ติดต่อเรา",
+        "href": "/pages/contact"
+    }
+]

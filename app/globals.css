@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --header-height: 4rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  appearance: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
 /* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
