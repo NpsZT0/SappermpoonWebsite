@@ -39,7 +39,7 @@ function Product1(
         <div className="mt-8">
             {/* Section 1 */}
             <section id="รางระบายน้ำคอนกรีตสำเร็จรูป-พร้อมฝาปิด" className={`section ${classScroll.h2}`}>
-                <h2 className="text-2xl font-bold sm:text-3xl text-start">
+                <h2 className="text-2xl font-bold sm:text-3xl text-start text-primary">
                     <Hashtag name="รางระบายน้ำคอนกรีตสำเร็จรูป พร้อมฝาปิด" href="#รางระบายน้ำคอนกรีตสำเร็จรูป-พร้อมฝาปิด" />
                 </h2>
                 <p className="text-gray-500 text-start">
@@ -76,7 +76,7 @@ function Product1(
 
             {/* Section 2 */}
             <section id="ตัวอย่าง-รางระบายน้ำคอนกรีตสำเร็จรูปพร้อมฝาปิดของ-บริษัทสยามน้ำรินจำกัด" className={`section ${classScroll.h4}`}>
-                <h4 className="mt-4 text-lg font-semibold leading-6 sm:text-xl text-start">
+                <h4 className="mt-4 text-lg font-semibold leading-6 sm:text-xl text-start text-secondary">
                     <Hashtag name="ตัวอย่าง รางระบายน้ำคอนกรีตสำเร็จรูปพร้อมฝาปิดของ บริษัทสยามน้ำรินจำกัด"
                         href="#ตัวอย่าง-รางระบายน้ำคอนกรีตสำเร็จรูปพร้อมฝาปิดของ-บริษัทสยามน้ำรินจำกัด" />
                 </h4>
@@ -111,7 +111,7 @@ function Product1(
 
             {/* Section 3 */}
             <section id="ตาราง-รางระบายน้ำคอนกรีตสำเร็จรูปพร้อมฝาปิดของ-SNR" className={`section ${classScroll.h4}`}>
-                <h4 className="mt-4 text-lg font-semibold leading-6 sm:text-xl text-start">
+                <h4 className="mt-4 text-lg font-semibold leading-6 sm:text-xl text-start text-secondary">
                     <Hashtag name="ตาราง รางระบายน้ำคอนกรีตสำเร็จรูปพร้อมฝาปิดของ SNR (บางส่วน)"
                         href="#ตาราง-รางระบายน้ำคอนกรีตสำเร็จรูปพร้อมฝาปิดของ-SNR" />
                 </h4>

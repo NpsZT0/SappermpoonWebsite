@@ -1,8 +1,8 @@
 function Heading6() {
     return (
-        <section className="flex items-center space-x-8">
-            <div className="w-[52%]">
-                <h2 className="text-2xl font-semibold text-secondary">
+        <section className="block lg:flex items-center space-y-4 lg:space-x-8">
+            <div className="lg:w-[52%]">
+                <h2 className="text-3xl font-semibold text-secondary mb-2">
                     ผนังคอกหมูขุน
                 </h2>
                 <p className="text-lg">
@@ -12,7 +12,7 @@ function Heading6() {
                 </p>
             </div>
             <img src="/images/products_service/5/1.png" alt="สแลทพ่อพันธุ์ สแลทคอกคลอด ผนังคอกหมูขุน"
-                className="w-[48%] h-[200px] lg:h-[300px] object-cover object-right rounded-md" loading="lazy" />
+                className="w-full lg:w-[48%] h-[200px] lg:h-[300px] object-cover object-right rounded-md" loading="lazy" />
         </section>
     );
 }

@@ -6,13 +6,13 @@
   :root {
     --header-height: 4rem;
 
-    --primary:           #2F3E46;
+    --primary:           #F18A17;
     /* --primary-content:   #c6cdf0; */
-    --secondary:         #354F52;
+    --secondary:         #FFA848;
     /* --secondary-content: #e7edff; */
-    --accent:            #52796F;
+    --accent:            #FFD075;
     /* --accent-content:    #e6d4fb; */
-    --neutral:           #84A98C;
+    --neutral:           #ffe2a9;
     /* --neutral-content:   #d5cfde; */
     --base:              #CAD2C5;
     /* --base-content:      #313031; */

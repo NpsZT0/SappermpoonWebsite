@@ -43,7 +43,7 @@ function Carousel({ links }: { links: { src: string, alt: string }[] }) {
       </button>
       <div className="absolute flex justify-center space-x-2 hs-carousel-pagination bottom-3 start-0 end-0">
         {links.map((_, index) => (
-          <span key={index} className="border border-gray-500 border-solid rounded-md cursor-pointer hs-carousel-active:bg-blue-500 hs-carousel-active:border-blue-500 size-3"></span>
+          <span key={index} className="border border-gray-500 border-solid rounded-md cursor-pointer hs-carousel-active:bg-primary hs-carousel-active:border-primary size-3"></span>
         ))}
       </div >
     </div >

@@ -22,7 +22,7 @@ function Product2(
         <div className="mt-8">
             {/* <!-- Section 1 --> */}
             <section id="แผ่นสแลทปูพื้นคอกสำเร็จรูป" className={`section ${classScroll.h2}`}>
-                <h2 className="text-2xl font-bold sm:text-3xl text-start">
+                <h2 className="text-2xl font-bold sm:text-3xl text-start text-primary">
                     <Hashtag name="แผ่นสแลทปูพื้นคอกสำเร็จรูป" href="#แผ่นสแลทปูพื้นคอกสำเร็จรูป" />
                 </h2>
                 <p className="text-gray-500 text-start">
@@ -61,7 +61,7 @@ function Product2(
 
             {/* <!--Section 2 -- > */}
             <section id="ตัวอย่าง-ขนาดแผ่นสแลทปูพื้นคอกสำเร็จรูปบางขนาดของ-SNR" className={`section ${classScroll.h4}`}>
-                <h4 className="mt-4 text-lg font-semibold leading-6 sm:text-xl text-start">
+                <h4 className="mt-4 text-lg font-semibold leading-6 sm:text-xl text-start text-secondary">
                     <Hashtag name="ตัวอย่าง ขนาดแผ่นสแลทปูพื้นคอกสำเร็จรูปบางขนาดของ SNR"
                         href="#ตัวอย่าง-ขนาดแผ่นสแลทปูพื้นคอกสำเร็จรูปบางขนาดของ-SNR" />
                 </h4>

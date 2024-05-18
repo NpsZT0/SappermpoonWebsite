@@ -1,9 +1,5 @@
 [
     {
-        "name": "หน้าแรก",
-        "href": "/"
-    },
-    {
         "name": "สินค้าและบริการ",
         "href": "/pages/product_service"
     },

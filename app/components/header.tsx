@@ -115,19 +115,21 @@ function Header({ routerData }: { routerData: { name: string, href: string }[] }
             <div className="flex-none hidden lg:block z-[1]">
                 {/* Navbar menu content here */}
                 <ul className="menu menu-horizontal">
-                    {routerData.map((item, index) => (
-                        <li key={index} className="px-1">
-                            {(pathname === item.href) ? (
-                                <Link href={item.href} className="text-base text-neutral">
-                                    {item.name}
-                                </Link>
-                            ) : (
-                                <Link href={item.href} className="text-base text-gray-700">
-                                    {item.name}
-                                </Link>
-                            )}
-                        </li>
-                    ))}
+                    {routerData.map((item, index) => {
+                        return (
+                            <li key={index} className="px-1">
+                                {(pathname === item.href) ? (
+                                    <Link href={item.href} className={`${index === routerData.length-1 ? 'bg-primary text-base text-white' : 'text-base text-primary'}`}>
+                                        {item.name}
+                                    </Link>
+                                ) : (
+                                    <Link href={item.href} className={`${index === routerData.length-1 ? 'bg-primary text-base text-white' : 'text-base text-black'}`}>
+                                        {item.name}
+                                    </Link>
+                                )}
+                            </li>
+                        )
+                    })}
                 </ul>
             </div >
             {/* <SwapThemeMode /> */}

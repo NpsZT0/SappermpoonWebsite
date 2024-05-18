@@ -1,7 +1,7 @@
 import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import type { Metadata } from 'next'
-import { Noto_Sans_Thai } from 'next/font/google'
+import { Noto_Sans_Thai, Poppins } from 'next/font/google'
 import './globals.css'
 
 import PrelineScript from "./components/PrelineScript";
@@ -10,7 +10,7 @@ import Header from './components/header'
 import Footer from './components/footer'
 import Sidebar from "./components/sidebar";
 
-import { routerData } from "./static/json";
+import { companyData, routerData } from "./static/json";
 
 const noto = Noto_Sans_Thai({
   subsets: ['thai'],
@@ -18,12 +18,12 @@ const noto = Noto_Sans_Thai({
 
 export const metadata: Metadata = {
   // viewport: 'width=device-width, initial-scale=1.0',
-  title: 'บริษัทห้างหุ้นส่วนจำกัด ทรัพย์เพิ่มพูน คอนกรีต',
+  title: companyData.name_th,
   openGraph: {
-    title: 'บริษัทห้างหุ้นส่วนจำกัด ทรัพย์เพิ่มพูน คอนกรีต',
-    description: 'สินค้า คอนกรีต สำเร็จรูป รวมถึงงานออกแบบ และงานก่อสร้าง บริษัทห้างหุ้นส่วนจำกัด ทรัพย์เพิ่มพูน คอนกรีต มีเจ้าหน้าที่เป็นผู้เชี่ยวชาญด้านการออกแบบและวางระบบต่าง ๆ โดยเฉพาะ โรงเลี้ยงสัตว์ ฟาร์มสัตว์ บ้าน หรือโรงงาน โปรดรับ บริษัทสยามน้ำรินจำกัด เป็นอีกหนึ่งทางเลือก ทางบริษัทฯ ยินดีรับฟัง และ พร้อมให้คำแนะนำ เพื่อประโยชน์สูงสุดของลูกค้า เน้น คุณภาพ และ รับประกันราคา จากโรงงานแน่นอน',
+    title: companyData.name_th,
+    description: `สินค้า คอนกรีต สำเร็จรูป รวมถึงงานออกแบบ และงานก่อสร้าง ${companyData.name_th} มีเจ้าหน้าที่เป็นผู้เชี่ยวชาญด้านการออกแบบและวางระบบต่าง ๆ โดยเฉพาะ โรงเลี้ยงสัตว์ ฟาร์มสัตว์ บ้าน หรือโรงงาน โปรดรับ บริษัทสยามน้ำรินจำกัด เป็นอีกหนึ่งทางเลือก ทางบริษัทฯ ยินดีรับฟัง และ พร้อมให้คำแนะนำ เพื่อประโยชน์สูงสุดของลูกค้า เน้น คุณภาพ และ รับประกันราคา จากโรงงานแน่นอน`,
     url: 'https://nextjs.org',
-    siteName: 'Sappermpoon',
+    siteName: companyData.name_en,
     images: [
       {
         url: 'https://images.pexels.com/photos/9685868/pexels-photo-9685868.jpeg', // Must be an absolute URL

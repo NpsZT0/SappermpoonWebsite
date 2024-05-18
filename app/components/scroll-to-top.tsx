@@ -28,7 +28,7 @@ export default function ScrollToTopButton() {
     };
     return (
         <button onClick={scrollToTop} title="Scroll to top"
-            className={`fixed p-2 text-center rounded-full bottom-4 right-4 backdrop-blur bg-primary/75 z-[2]`}
+            className={`fixed p-2 text-center rounded-full bottom-4 right-4 backdrop-blur bg-primary z-[2]`}
             style={{display: displayStyle, transition: 'opacity 0.3s ease 0s', opacity: opacityStyle}}
         >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
