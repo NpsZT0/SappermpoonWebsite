@@ -54,7 +54,7 @@ export default function RootLayout({
       </head>
 
       <body>
-        <div className={`container ${noto.className} bg-white`}>
+        <div className={`container ${noto.className}`}>
           <div className="absolute inset-x-0 top-0 z-[1] w-full h-full">
             <div className="drawer">
               <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />

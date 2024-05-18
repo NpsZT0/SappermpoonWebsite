@@ -1,4 +1,4 @@
-import ContentHome from "./partials/content-home"
+import ContentHome from "./pages/home/content-home"
 import Carousel from "./components/carousel"
 
 export default function Home() {

@@ -1,6 +1,6 @@
 function Footer() {
     return (
-        <footer className="footer p-10 bg-base-200 text-base-content">
+        <footer className="footer p-10 bg-neutral text-base-content">
             <nav>
                 <header className="footer-title">Services</header>
                 <a className="link link-hover">Branding</a>
@@ -28,8 +28,8 @@ function Footer() {
                         <span className="label-text">Enter your email address</span>
                     </label>
                     <div className="join">
-                        <input type="text" placeholder="username@site.com" className="input input-bordered join-item" />
-                        <button className="btn btn-primary join-item">Subscribe</button>
+                        <input type="text" placeholder="username@site.com" className="input input-bordered join-item bg-slate-300" />
+                        <button className="btn bg-primary text-white join-item">Subscribe</button>
                     </div>
                 </fieldset>
             </form>

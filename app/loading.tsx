@@ -1,7 +1,7 @@
 export default function Loading() {
     // You can add any UI inside Loading, including a Skeleton.
     return (
-        <div className=' w-full text-base-content bg-white'>
+        <div className=' w-full text-base-content'>
             <div className="skeleton bg-base-content h-[380px] mx-4">
             </div>
             <div className='flex flex-col items-start justify-start mx-4 py-10'>

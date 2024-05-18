@@ -118,11 +118,11 @@ function Header({ routerData }: { routerData: { name: string, href: string }[] }
                     {routerData.map((item, index) => (
                         <li key={index} className="px-1">
                             {(pathname === item.href) ? (
-                                <Link href={item.href} className="text-base text-primary">
+                                <Link href={item.href} className="text-base text-neutral">
                                     {item.name}
                                 </Link>
                             ) : (
-                                <Link href={item.href} className="text-base text-black">
+                                <Link href={item.href} className="text-base text-gray-700">
                                     {item.name}
                                 </Link>
                             )}
@@ -130,6 +130,7 @@ function Header({ routerData }: { routerData: { name: string, href: string }[] }
                     ))}
                 </ul>
             </div >
+            {/* <SwapThemeMode /> */}
         </header >
     );
 }

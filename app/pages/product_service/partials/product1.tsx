@@ -3,13 +3,14 @@ import Link from "next/link";
 
 function Product1(
     {
-        classScrollH2,
-        classScrollH4,
+        classScroll,
         blueprintsProd1,
         detailsProduct1
     }: {
-        classScrollH2: string,
-        classScrollH4: string,
+        classScroll: {
+            h2:string,
+            h4:string
+        },
         blueprintsProd1: ({
             id: string;
             name: string;
@@ -37,7 +38,7 @@ function Product1(
     return (
         <div className="mt-8">
             {/* Section 1 */}
-            <section id="รางระบายน้ำคอนกรีตสำเร็จรูป-พร้อมฝาปิด" className={`section ${classScrollH2}`}>
+            <section id="รางระบายน้ำคอนกรีตสำเร็จรูป-พร้อมฝาปิด" className={`section ${classScroll.h2}`}>
                 <h2 className="text-2xl font-bold sm:text-3xl text-start">
                     <Hashtag name="รางระบายน้ำคอนกรีตสำเร็จรูป พร้อมฝาปิด" href="#รางระบายน้ำคอนกรีตสำเร็จรูป-พร้อมฝาปิด" />
                 </h2>
@@ -74,7 +75,7 @@ function Product1(
             </div>
 
             {/* Section 2 */}
-            <section id="ตัวอย่าง-รางระบายน้ำคอนกรีตสำเร็จรูปพร้อมฝาปิดของ-บริษัทสยามน้ำรินจำกัด" className={`section ${classScrollH4}`}>
+            <section id="ตัวอย่าง-รางระบายน้ำคอนกรีตสำเร็จรูปพร้อมฝาปิดของ-บริษัทสยามน้ำรินจำกัด" className={`section ${classScroll.h4}`}>
                 <h4 className="mt-4 text-lg font-semibold leading-6 sm:text-xl text-start">
                     <Hashtag name="ตัวอย่าง รางระบายน้ำคอนกรีตสำเร็จรูปพร้อมฝาปิดของ บริษัทสยามน้ำรินจำกัด"
                         href="#ตัวอย่าง-รางระบายน้ำคอนกรีตสำเร็จรูปพร้อมฝาปิดของ-บริษัทสยามน้ำรินจำกัด" />
@@ -109,7 +110,7 @@ function Product1(
             </section >
 
             {/* Section 3 */}
-            <section id="ตาราง-รางระบายน้ำคอนกรีตสำเร็จรูปพร้อมฝาปิดของ-SNR" className={`section ${classScrollH4}`}>
+            <section id="ตาราง-รางระบายน้ำคอนกรีตสำเร็จรูปพร้อมฝาปิดของ-SNR" className={`section ${classScroll.h4}`}>
                 <h4 className="mt-4 text-lg font-semibold leading-6 sm:text-xl text-start">
                     <Hashtag name="ตาราง รางระบายน้ำคอนกรีตสำเร็จรูปพร้อมฝาปิดของ SNR (บางส่วน)"
                         href="#ตาราง-รางระบายน้ำคอนกรีตสำเร็จรูปพร้อมฝาปิดของ-SNR" />

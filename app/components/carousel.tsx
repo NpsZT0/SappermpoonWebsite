@@ -5,7 +5,7 @@ function Carousel({ links }: { links: { src: string, alt: string }[] }) {
       "loadingClasses": "opacity-0",
       "isAutoPlay": true
     }' className="relative z-0 h-fit init">
-      <div className="hs-carousel relative overflow-hidden w-full min-h-[200px] lg:min-h-[300px] bg-white rounded-none">
+      <div className="hs-carousel relative overflow-hidden w-full min-h-[200px] lg:min-h-[300px] rounded-none">
         <div
           className="absolute top-0 bottom-0 flex transition-transform duration-700 h-fit hs-carousel-body start-0 flex-nowrap">
           {links.map((link, index) => (

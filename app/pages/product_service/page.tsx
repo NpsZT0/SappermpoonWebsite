@@ -17,8 +17,10 @@ import ScrollToTopButton from '@/app/components/scroll-to-top';
 
 export default async function ProductServicePage() {
     // Variables
-    const classScrollH2 = 'scroll-mt-[calc(40px+40px+var(--header-height))] lg:scroll-mt-[calc(40px+var(--header-height))]'
-    const classScrollH4 = 'scroll-mt-[calc(30px+30px+var(--header-height))] lg:scroll-mt-[calc(30px+var(--header-height))]'
+    const classScroll = {
+        h2: 'scroll-mt-[calc(40px+40px+var(--header-height))] lg:scroll-mt-[calc(40px+var(--header-height))]',
+        h4: 'scroll-mt-[calc(30px+30px+var(--header-height))] lg:scroll-mt-[calc(30px+var(--header-height))]'
+    }
     const carouselLinks = [
         {
             src: "/images/products_service/1/2.jpg",
@@ -106,12 +108,10 @@ export default async function ProductServicePage() {
                         </div>
 
                         {/* <!-- Product 1 --> */}
-                        <Product1 classScrollH2={classScrollH2} classScrollH4={classScrollH4}
-                            blueprintsProd1={blueprintsProd1} detailsProduct1={detailsProduct1} />
+                        <Product1 classScroll={classScroll} blueprintsProd1={blueprintsProd1} detailsProduct1={detailsProduct1} />
 
                         {/* <!-- Product 2 --> */}
-                        <Product2 classScrollH2={classScrollH2} classScrollH4={classScrollH4}
-                            detailsProduct2={detailsProduct2} />
+                        <Product2 classScroll={classScroll} detailsProduct2={detailsProduct2} />
 
                         {/* <!-- Product 3 --> */}
                         {/* <ProductsServiceProd3 :classScrollH2="classScrollH2" :classScrollH4="classScrollH4"
