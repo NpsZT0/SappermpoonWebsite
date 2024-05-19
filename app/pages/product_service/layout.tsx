@@ -1,3 +1,4 @@
+import { companyData } from '@/app/static/json'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -6,7 +7,7 @@ export const metadata: Metadata = {
     keywords: 'Precast Concrete',
     openGraph: {
         title: 'รางระบายน้ำคอนกรีตสำเร็จรูป พร้อมฝาปิด',
-        description: 'รางระบายน้ำคอนกรีตสำเร็จรูปพร้อมฝาปิด ของบริษัทสยามน้ำรินจำกัด มีความ แข็งแรงทนทาน สะดวกในการติดตั้งใช้เวลาน้อย รักษาความสะอาดง่าย มีวิธีการเชื่อมต่อเป็นเนื้อเดียวกัน มีแบบฝาปิด ทั้งคอนกรีตหรือฝาตะแกรงเหล็ก',
+        description: `รางระบายน้ำคอนกรีตสำเร็จรูปพร้อมฝาปิดของ ${companyData.name_th} มีความ แข็งแรงทนทาน สะดวกในการติดตั้งใช้เวลาน้อย รักษาความสะอาดง่าย มีวิธีการเชื่อมต่อเป็นเนื้อเดียวกัน มีแบบฝาปิด ทั้งคอนกรีตหรือฝาตะแกรงเหล็ก`,
         url: 'https://nextjs.org',
         siteName: 'Sappermpoon',
         images: [
@@ -33,8 +34,8 @@ export default function ProductServiceLayout({
     children: React.ReactNode
 }) {
     return (
-        <section>
+        <main>
             {children}
-        </section>
+        </main>
     )
 }

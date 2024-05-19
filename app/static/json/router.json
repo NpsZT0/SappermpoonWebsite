@@ -1,22 +1,22 @@
 [
     {
-        "name": "สินค้าและบริการ",
+        "name": "PRODUCT",
         "href": "/pages/product_service"
     },
     {
-        "name": "ออกแบบและก่อสร้าง",
+        "name": "DESIGN & BUILD",
         "href": "/pages/design_build"
     },
     {
-        "name": "ผลการดำเนินงาน",
+        "name": "WORKS",
         "href": "/pages/works"
     },
     {
-        "name": "เกี่ยวกับเรา",
+        "name": "ABOUT US",
         "href": "/pages/about"
     },
     {
-        "name": "ติดต่อเรา",
+        "name": "CONTACT",
         "href": "/pages/contact"
     }
 ]

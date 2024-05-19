@@ -1,13 +1,18 @@
-import Hashtag from "@/app/components/hashtag";
+//** data */
+import { companyData } from "@/app/static/json";
+
+//** components */
+import { Hashtag } from "@/app/components";
 
 function Product2(
     {
         classScroll,
-        detailsProduct2
+        detailsProduct2,
+        ids
     }: {
         classScroll: {
-            h2:string,
-            h4:string
+            h2: string,
+            h4: string
         },
         detailsProduct2: {
             uditch_1: {
@@ -16,25 +21,30 @@ function Product2(
                 details: string;
                 unit: string;
             };
+        }[],
+        ids: {
+            id: string;
+            name: string;
         }[]
-    }) {
+    }
+) {
     return (
         <div className="mt-8">
             {/* <!-- Section 1 --> */}
-            <section id="แผ่นสแลทปูพื้นคอกสำเร็จรูป" className={`section ${classScroll.h2}`}>
+            <section id={ids[0].id} className={`section ${classScroll.h2}`}>
                 <h2 className="text-2xl font-bold sm:text-3xl text-start text-primary">
-                    <Hashtag name="แผ่นสแลทปูพื้นคอกสำเร็จรูป" href="#แผ่นสแลทปูพื้นคอกสำเร็จรูป" />
+                    <Hashtag name={ids[0].name} href={`#${ids[0].id}`} />
                 </h2>
                 <p className="text-gray-500 text-start">
-                    แสลทปูพื้นสำเร็จรูป SNR ผลิตจากคอนกรีตเสริมเหล็กซึ่งมีความคงทนแข็งแกร่ง
+                    แสลทปูพื้นสำเร็จรูป ผลิตจากคอนกรีตเสริมเหล็กซึ่งมีความคงทนแข็งแกร่ง
                     โดยใช้เทคโนโลยีแบบเดียวกันกับต่างประเทศ ประกอบง่าย ๆ ประหยัดทั้งเวลา ทั้งแรงงาน
-                    และที่สำคัญประหยัดค่าใช้จ่ายไม่มีบานปลาย บริษัทสยามน้ำรินจำกัด มีแสลทปูพื้น มีให้เลือก หลายแบบ หลายขนาด
+                    และที่สำคัญประหยัดค่าใช้จ่ายไม่มีบานปลาย {companyData.name_th} มีแสลทปูพื้น มีให้เลือก หลายแบบ หลายขนาด
                     เข้ากับการใช้งานได้อย่างมีคุณภาพ
                 </p>
             </section>
 
             {/* // <!-- Images-- > */}
-            <div className="grid grid-cols-6 grid-rows-2 gap-1 lg:gap-3 h-[150px] md:h-[250px] lg:h-[350px] mt-2">
+            <div className="grid grid-cols-6 grid-rows-2 gap-1 lg:gap-3 h-[150px] md:h-[250px] lg:h-[350px] mt-4">
 
                 <div className="col-span-4 col-start-1 overflow-hidden rounded-md">
                     <img className="object-cover w-full h-full transition-transform duration-500 ease-in-out rounded-md hover:scale-105"
@@ -60,17 +70,17 @@ function Product2(
             </div>
 
             {/* <!--Section 2 -- > */}
-            <section id="ตัวอย่าง-ขนาดแผ่นสแลทปูพื้นคอกสำเร็จรูปบางขนาดของ-SNR" className={`section ${classScroll.h4}`}>
+            <section id={ids[1].id} className={`section ${classScroll.h4}`}>
                 <h4 className="mt-4 text-lg font-semibold leading-6 sm:text-xl text-start text-secondary">
-                    <Hashtag name="ตัวอย่าง ขนาดแผ่นสแลทปูพื้นคอกสำเร็จรูปบางขนาดของ SNR"
-                        href="#ตัวอย่าง-ขนาดแผ่นสแลทปูพื้นคอกสำเร็จรูปบางขนาดของ-SNR" />
+                    <Hashtag name={ids[1].name}
+                        href={`#${ids[1].id}`} />
                 </h4>
                 <div className="mt-2 overflow-x-auto">
                     <table className="table w-full">
                         <thead>
                             <tr className="text-sm">
                                 <th></th>
-                                <th>ขนาด <strong className="text-gray-600">แผ่นสแลทปูน</strong> SNR</th>
+                                <th>ขนาด <strong className="text-gray-600">แผ่นสแลทปูน</strong></th>
                             </tr>
                         </thead>
                         <tbody>

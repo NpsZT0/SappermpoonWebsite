@@ -119,11 +119,11 @@ function Header({ routerData }: { routerData: { name: string, href: string }[] }
                         return (
                             <li key={index} className="px-1">
                                 {(pathname === item.href) ? (
-                                    <Link href={item.href} className={`${index === routerData.length-1 ? 'bg-primary text-base text-white' : 'text-base text-primary'}`}>
+                                    <Link href={item.href} className={`${index === routerData.length-1 ? 'bg-primary text-base font-semibold text-white' : 'text-base font-semibold text-primary'}`}>
                                         {item.name}
                                     </Link>
                                 ) : (
-                                    <Link href={item.href} className={`${index === routerData.length-1 ? 'bg-primary text-base text-white' : 'text-base text-black'}`}>
+                                    <Link href={item.href} className={`${index === routerData.length-1 ? 'bg-primary text-base font-semibold text-white' : 'text-base font-semibold text-gray-600'}`}>
                                         {item.name}
                                     </Link>
                                 )}

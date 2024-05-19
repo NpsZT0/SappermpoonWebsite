@@ -5,7 +5,7 @@ function Works() {
                 <article className="mb-32 lg:col-span-8">
                     <div className="flex-grow mb-8 break-words sm:mx-8 ">
                         <div className="py-8 border-b border-gray-200">
-                            <h1 className="text-3xl font-bold sm:text-4xl text-start">
+                            <h1 className="text-3xl font-bold sm:text-4xl text-start text-primary">
                                 ผลการดำเนินงาน
                             </h1>
                             <p className="text-gray-500 text-start">

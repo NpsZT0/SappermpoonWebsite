@@ -1,5 +1,8 @@
 'use client';
+//** libraries */
 import { useEffect } from 'react';
+
+//** data */
 import {
     blueprintsProd1,
     blueprintsProd3,
@@ -7,20 +10,72 @@ import {
     detailsProduct2,
     detailsProduct3,
     tableOfContents,
-} from '@/app/static/json'
+} from '@/app/static/json';
 
-import Product1 from './partials/product1';
-import TableOfContent from './partials/table-of-content';
-import Product2 from './partials/product2';
-import Carousel from '@/app/components/carousel';
-import ScrollToTopButton from '@/app/components/scroll-to-top';
+//** partials */
+import {
+    Product1,
+    Product2,
+    Product3,
+    TableOfContent
+} from './partials';
+
+//** components */
+import {
+    Carousel,
+    ScrollToTopButton
+} from '@/app/components';
+
+interface IProductIds {
+    id: string;
+    name: string;
+};
+
 
 export default async function ProductServicePage() {
     // Variables
+    const product1Ids: IProductIds[] = [
+        {//section1
+            id: tableOfContents[0].id,
+            name: tableOfContents[0].name
+        },
+        {//section2 (children1 of section1)
+            id: tableOfContents[0].children![0].id,
+            name: tableOfContents[0].children![0].name
+        },
+        {//section3 (children2 of section1)
+            id: tableOfContents[0].children![1].id,
+            name: tableOfContents[0].children![1].name
+        }
+    ];
+    const product2Ids: IProductIds[] = [
+        {
+            id: tableOfContents[1].id,
+            name: tableOfContents[1].name
+        },
+        {
+            id: tableOfContents[1].children![0].id,
+            name: tableOfContents[1].children![0].name
+        }
+    ];
+    const product3Ids: IProductIds[] = [
+        {
+            id: tableOfContents[2].id,
+            name: tableOfContents[2].name
+        },
+        {
+            id: tableOfContents[2].children![0].id,
+            name: tableOfContents[2].children![0].name
+        },
+        {
+            id: tableOfContents[2].children![1].id,
+            name: tableOfContents[2].children![1].name
+        }
+    ];
     const classScroll = {
         h2: 'scroll-mt-[calc(40px+40px+var(--header-height))] lg:scroll-mt-[calc(40px+var(--header-height))]',
         h4: 'scroll-mt-[calc(30px+30px+var(--header-height))] lg:scroll-mt-[calc(30px+var(--header-height))]'
-    }
+    };
     const carouselLinks = [
         {
             src: "/images/products_service/1/2.jpg",
@@ -46,7 +101,7 @@ export default async function ProductServicePage() {
             src: "/images/products_service/6/4.jpg",
             alt: "รั้วและกำแพงคอนกรีตสำเร็จรูป",
         },
-    ]
+    ];
     useEffect(() => {
         const scrollSpy = () => {
             const navTopHeight = 72 + 40;
@@ -82,22 +137,22 @@ export default async function ProductServicePage() {
         }
 
         window.addEventListener('scroll', scrollSpy)
-    }, [])
+    }, []);
 
     return (
         <div className="container px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
             <div className="flex flex-col lg:grid lg:grid-cols-11 lg:gap-8">
 
-                {/* <!-- Article 1 --> */}
+                {/* Article 1 */}
                 <article className="mb-32 lg:col-span-8">
                     <div className="flex-grow mb-8 break-words sm:mx-8 ">
 
-                        {/* <!-- Introduction --> */}
+                        {/* Introduction */}
                         <div className="py-8 border-b border-gray-200">
                             <h1 className="text-3xl font-bold sm:text-4xl text-start text-primary">
                                 สินค้าและบริการ
                             </h1>
-                            <p className="text-gray-500 text-start">
+                            <p className="text-gray-500 text-start mt-2">
                                 สร้างโลกของความแข็งแกร่งและคุณภาพด้วยวัสดุก่อสร้างจากเรา!
                                 เราเสนอสินค้าที่มีคุณภาพสูงที่สุดและมาพร้อมกับความคุ้มค่าที่ยอดเยี่ยม
                                 ไม่ว่าคุณกำลังก่อสร้างบ้านหรือโครงการใหญ่ ๆ เรามีทุกอย่างที่คุณต้องการเพื่อให้โครงการของคุณประสบความสำเร็จ
@@ -107,19 +162,18 @@ export default async function ProductServicePage() {
                             </div>
                         </div>
 
-                        {/* <!-- Product 1 --> */}
-                        <Product1 classScroll={classScroll} blueprintsProd1={blueprintsProd1} detailsProduct1={detailsProduct1} />
+                        {/* Product 1 */}
+                        <Product1 classScroll={classScroll} blueprintsProd1={blueprintsProd1} detailsProduct1={detailsProduct1} ids={product1Ids} />
 
-                        {/* <!-- Product 2 --> */}
-                        <Product2 classScroll={classScroll} detailsProduct2={detailsProduct2} />
+                        {/* Product 2 */}
+                        <Product2 classScroll={classScroll} detailsProduct2={detailsProduct2} ids={product2Ids} />
 
-                        {/* <!-- Product 3 --> */}
-                        {/* <ProductsServiceProd3 :classScrollH2="classScrollH2" :classScrollH4="classScrollH4"
-                :blueprintsProd3="blueprintsProd3" :detailsProduct3="detailsProduct3" /> */}
+                        {/* Product 3 */}
+                        <Product3 classScroll={classScroll} blueprintsProd3={blueprintsProd3} detailsProduct3={detailsProduct3} ids={product3Ids} />
                     </div>
                 </article>
 
-                {/* <!-- Table of Contents --> */}
+                {/* Table of Contents */}
                 <TableOfContent />
 
                 {/* < !--Scroll to top-- > */}

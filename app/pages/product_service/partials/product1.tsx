@@ -1,15 +1,22 @@
-import Hashtag from "@/app/components/hashtag";
+//** libraries */
 import Link from "next/link";
+
+//** data */
+import { companyData } from "@/app/static/json";
+
+//** components */
+import { Hashtag } from "@/app/components";
 
 function Product1(
     {
         classScroll,
         blueprintsProd1,
-        detailsProduct1
+        detailsProduct1,
+        ids
     }: {
         classScroll: {
-            h2:string,
-            h4:string
+            h2: string,
+            h4: string
         },
         blueprintsProd1: ({
             id: string;
@@ -33,24 +40,28 @@ function Product1(
                 details: string;
                 unit: string;
             };
+        }[],
+        ids: {
+            id: string;
+            name: string;
         }[]
     }) {
     return (
-        <div className="mt-8">
+        <div className="mt-8 space-y-8">
             {/* Section 1 */}
-            <section id="รางระบายน้ำคอนกรีตสำเร็จรูป-พร้อมฝาปิด" className={`section ${classScroll.h2}`}>
+            <section id={ids[0].id} className={`section ${classScroll.h2}`}>
                 <h2 className="text-2xl font-bold sm:text-3xl text-start text-primary">
-                    <Hashtag name="รางระบายน้ำคอนกรีตสำเร็จรูป พร้อมฝาปิด" href="#รางระบายน้ำคอนกรีตสำเร็จรูป-พร้อมฝาปิด" />
+                    <Hashtag name={ids[0].name} href={`#${ids[0].id}`} />
                 </h2>
                 <p className="text-gray-500 text-start">
-                    รางระบายน้ำคอนกรีตสำเร็จรูปพร้อมฝาปิด ของบริษัทสยามน้ำรินจำกัด มีความ แข็งแรงทนทาน
-                    สะดวกในการติดตั้งใช้เวลาน้อย รักษาความสะอาดง่าย มีวิธีการเชื่อมต่อเป็นเนื้อเดียวกัน มีแบบฝาปิด
-                    ทั้งคอนกรีตหรือฝาตะแกรงเหล็ก
+                    รางระบายน้ำคอนกรีตสำเร็จรูปพร้อมฝาปิด
+                    แข็งแรง ใช้เวลาติดตั้งน้อย
+                    รักษาความสะอาดง่าย ต่อเป็นเนื้อเดียวกัน มีแบบฝาปิด ทั้งคอนกรีตหรือฝาตะแกรงเหล็ก
                 </p>
             </section>
 
             {/* Images */}
-            <div className="grid grid-cols-6 grid-rows-2 gap-1 lg:gap-3 h-[150px] md:h-[250px] lg:h-[350px] mt-2">
+            <div className="grid grid-cols-6 grid-rows-2 gap-1 lg:gap-3 h-[150px] md:h-[250px] lg:h-[350px] mt-4">
                 <div className="col-span-4 col-start-1 overflow-hidden rounded-md">
                     <img className="object-cover w-full h-full transition-transform duration-500 ease-in-out rounded-md hover:scale-105"
                         src="/images/products_service/1/5.jpg" alt="banner5" />
@@ -75,26 +86,27 @@ function Product1(
             </div>
 
             {/* Section 2 */}
-            <section id="ตัวอย่าง-รางระบายน้ำคอนกรีตสำเร็จรูปพร้อมฝาปิดของ-บริษัทสยามน้ำรินจำกัด" className={`section ${classScroll.h4}`}>
+            <section id={ids[1].id} className={`section ${classScroll.h4}`}>
                 <h4 className="mt-4 text-lg font-semibold leading-6 sm:text-xl text-start text-secondary">
-                    <Hashtag name="ตัวอย่าง รางระบายน้ำคอนกรีตสำเร็จรูปพร้อมฝาปิดของ บริษัทสยามน้ำรินจำกัด"
-                        href="#ตัวอย่าง-รางระบายน้ำคอนกรีตสำเร็จรูปพร้อมฝาปิดของ-บริษัทสยามน้ำรินจำกัด" />
+                    <Hashtag name={ids[1].name}
+                        href={`#${ids[1].id}`} />
                 </h4>
-                <div className="mt-2 space-y-3">
-                    <ul className="leading-5 ">
+                <div className="mt-4">
+                    <ul className="space-y-3">
                         {blueprintsProd1.map((blueprint, index) => (
-                            <li key={index} className="flex text-gray-500 w-fit h-fit">
+                            <li key={index} className="flex text-gray-500 w-fit h-fit leading-6">
                                 {typeof (blueprint.name) == 'object' || typeof (blueprint.href) == 'object' ? (
-                                    <>
-                                        <Link href={blueprint.href[0]} target="_blank" className="hover:text-primary">
+                                    <div className="w-fit">
+                                        <Link href={blueprint.href[0]} target="_blank" className="hover:text-primary w-fit">
                                             {blueprint.name[0]}
-                                        </Link>&nbsp;|&nbsp;
-                                        <Link href={blueprint.href[1]} target="_blank" className="hover:text-primary">
+                                        </Link>
+                                        &nbsp;|&nbsp;
+                                        <Link href={blueprint.href[1]} target="_blank" className="hover:text-primary w-fit">
                                             {blueprint.name[1]}
                                         </Link>
-                                    </>
+                                    </div>
                                 ) : (
-                                    <Link href={blueprint.href} target="_blank" className="hover:text-primary">
+                                    <Link href={blueprint.href} target="_blank" className="hover:text-primary w-fit">
                                         {blueprint.name}
                                     </Link>
                                 )}
@@ -110,18 +122,18 @@ function Product1(
             </section >
 
             {/* Section 3 */}
-            <section id="ตาราง-รางระบายน้ำคอนกรีตสำเร็จรูปพร้อมฝาปิดของ-SNR" className={`section ${classScroll.h4}`}>
+            <section id={ids[2].id} className={`section ${classScroll.h4}`}>
                 <h4 className="mt-4 text-lg font-semibold leading-6 sm:text-xl text-start text-secondary">
-                    <Hashtag name="ตาราง รางระบายน้ำคอนกรีตสำเร็จรูปพร้อมฝาปิดของ SNR (บางส่วน)"
-                        href="#ตาราง-รางระบายน้ำคอนกรีตสำเร็จรูปพร้อมฝาปิดของ-SNR" />
+                    <Hashtag name={ids[2].name}
+                        href={`#${ids[2].id}`} />
                 </h4>
                 <div className="mt-2 overflow-x-auto">
                     <table className="table w-full">
                         <thead>
                             <tr className="text-sm">
                                 <th></th>
-                                <th>ขนาด <strong className="text-gray-600">รางน้ำคอนกรีต</strong> SNR</th>
-                                <th>ขนาด <strong className="text-gray-600">ฝารางน้ำคอนกรีต</strong> SNR</th>
+                                <th>ขนาด <strong className="text-gray-600">รางน้ำคอนกรีต</strong></th>
+                                <th>ขนาด <strong className="text-gray-600">ฝารางน้ำคอนกรีต</strong></th>
                             </tr>
                         </thead>
                         <tbody>
