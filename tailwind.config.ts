@@ -140,7 +140,7 @@ const config: Config = {
           "primary": "#de9e36",
           "primary-content": "#EEE4D4",
 
-          "secondary": "##DEB841",
+          "secondary": "#DEB841",
           "secondary-content": "#F2E5C0",
 
           "accent": "#37323E",
