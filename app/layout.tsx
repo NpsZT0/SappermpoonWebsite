@@ -1,19 +1,20 @@
-import { SpeedInsights } from "@vercel/speed-insights/next"
-
+import './globals.css'
 import type { Metadata } from 'next'
 import { Noto_Sans_Thai, Poppins } from 'next/font/google'
-import './globals.css'
-
-import PrelineScript from "./components/PrelineScript";
-
-import Header from './components/header'
-import Footer from './components/footer'
-import Sidebar from "./components/sidebar";
-
+import { Header, Sidebar, Footer } from '@components/layout';
 import { companyData, routerData } from "./static/json";
+// import PrelineScript from "./components/PrelineScript";
+// import { SpeedInsights } from "@vercel/speed-insights/next"
+// import { companyData } from "./functions";
 
-const noto = Noto_Sans_Thai({
-  subsets: ['thai'],
+import { getGlobalSettings } from 'data/loader';
+
+
+const notoSans = Noto_Sans_Thai({
+  subsets: ['latin', 'thai'],
+  variable: '--font-noto',
+  display: 'swap',
+  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
 })
 
 export const metadata: Metadata = {
@@ -42,34 +43,45 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({
+async function loader() {
+  const { data } = await getGlobalSettings();
+  // console.dir(data, { depth: null });
+  if (!data) throw new Error("Failed to fetch global settings");
+  return { header: data?.header, footer: data?.footer };
+}
+
+export default async function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode
-}) {
+}>) {
+  const { header, footer } = await loader();
+  // console.log("Header: ");
+  // console.dir(header, { depth: null });
+  // console.log("Footer: ");
+  // console.dir(footer, { depth: null });
+
   return (
     <html lang="en" data-theme="default" className="scroll-smooth">
       <head>
         <link rel="icon" href="/favicon/circle/spp-black.ico" type="image/x-icon" sizes="any" />
       </head>
-
-      <body>
-        <div className={`container ${noto.className}`}>
+      <body id="home">
+        <div className={`container ${notoSans.className}`}>
           <div className="absolute inset-x-0 top-0 z-[1] w-full h-full">
             <div className="drawer">
               <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
               <div className="flex flex-col drawer-content bg-white">
-                <Header routerData={routerData} />
+                <Header data={header} />
                 {children}
-                <Footer />
+                <Footer data={footer} />
               </div>
-              {/* <!-- Sidebar --> */}
-              <Sidebar routerData={routerData} />
+              <Sidebar data={header} />
             </div>
           </div>
         </div>
-        <SpeedInsights />
-        <PrelineScript />
+        {/* <SpeedInsights />
+        <PrelineScript /> */}
       </body>
     </html>
   )

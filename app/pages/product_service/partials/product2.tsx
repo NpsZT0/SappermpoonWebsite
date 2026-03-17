@@ -1,8 +1,8 @@
 //** data */
-import { companyData } from "@/app/static/json";
+import { companyData } from "@static/json";
 
 //** components */
-import { Hashtag } from "@/app/components";
+import { Hashtag } from "@components/index";
 
 function Product2(
     {

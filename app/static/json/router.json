@@ -1,5 +1,9 @@
 [
     {
+        "name": "HOME",
+        "href": "/"
+    },
+    {
         "name": "PRODUCT",
         "href": "/pages/product_service"
     },

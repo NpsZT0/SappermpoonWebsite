@@ -1,4 +1,4 @@
-import ScrollToTopButton from "@/app/components/scroll-to-top";
+import { ScrollToTopButton } from "@components/index";
 
 function Design() {
     return (

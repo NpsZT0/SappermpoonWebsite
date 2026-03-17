@@ -1,6 +1,6 @@
 async function transProductType(productType: string) {
     try {
-        console.log('productType', productType)
+        // console.log('productType', productType)
         switch (productType) {
             case 'trough':
                 return 'รางระบายน้ำ'

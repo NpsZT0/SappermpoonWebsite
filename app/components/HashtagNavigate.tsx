@@ -1,4 +1,4 @@
-function Hashtag({ name, href }: { name: string, href: string }) {
+function HashtagNavigate({ name, href }: { name: string, href: string }) {
     return (
         <a className="relative border-none group lg:-ml-2 lg:pl-2" href={href}>
             <span
@@ -16,4 +16,4 @@ function Hashtag({ name, href }: { name: string, href: string }) {
     );
 }
 
-export default Hashtag;
+export default HashtagNavigate;

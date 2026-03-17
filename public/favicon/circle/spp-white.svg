@@ -9,8 +9,8 @@
                             <g>
                                 <path
                                     d="M96 160c0-88.366 71.634-160 160-160 88.366 0 160 71.634 160 160 0 88.366-71.634 160-160 160-88.366 0-160-71.634-160-160z"
-                                    fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1"
-                                    stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10"
+                                    fill="#ffffff" fill-rule="nonzero" stroke="none" strokeWidth="1"
+                                    strokeLinecap="butt" strokeLinejoin="miter" stroke-miterlimit="10"
                                     stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none"
                                     font-size="none" text-anchor="none" style="mix-blend-mode: normal"
                                     data-fill-palette-color="tertiary"></path>

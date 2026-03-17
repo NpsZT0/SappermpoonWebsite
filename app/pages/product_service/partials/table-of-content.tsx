@@ -1,7 +1,7 @@
 'use client';
 import {
     tableOfContents,
-} from '@/app/static/json'
+} from '@static/json'
 import Link from 'next/link'
 import { useState } from 'react';
 import { usePathname } from 'next/navigation'
@@ -16,7 +16,7 @@ function TableOfContent() {
                 <div className="border-b border-gray-200 border-dashed lg:py-8 lg:border-0">
                     <button type="button" className="py-3 flex items-center gap-1.5 lg:cursor-text lg:select-text w-full h-full lg:disabled"
                         onClick={() => {
-                            console.log('clicked')
+                            // console.log('clicked')
                             setIsClicked(!isClicked)
                         }}>
                         <span className="font-semibold truncate text-sm/6">Table of Contents</span>

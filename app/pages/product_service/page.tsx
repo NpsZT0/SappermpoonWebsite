@@ -10,7 +10,7 @@ import {
     detailsProduct2,
     detailsProduct3,
     tableOfContents,
-} from '@/app/static/json';
+} from '@static/json';
 
 //** partials */
 import {
@@ -21,16 +21,12 @@ import {
 } from './partials';
 
 //** components */
-import {
-    Carousel,
-    ScrollToTopButton
-} from '@/app/components';
+import { Carousel, ScrollToTopButton } from '@components/index';
 
 interface IProductIds {
     id: string;
     name: string;
 };
-
 
 export default async function ProductServicePage() {
     // Variables
@@ -102,6 +98,7 @@ export default async function ProductServicePage() {
             alt: "รั้วและกำแพงคอนกรีตสำเร็จรูป",
         },
     ];
+
     useEffect(() => {
         const scrollSpy = () => {
             const navTopHeight = 72 + 40;

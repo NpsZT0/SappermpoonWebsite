@@ -1,4 +1,4 @@
-import { companyData } from '@/app/static/json';
+import { companyData } from '@static/json';
 
 function Title() {
     return (
